@@ -26,7 +26,7 @@ public class TypesOfCakes
     {
         name = newName;
     }
-    public void changeName(double newCost)
+    public void changeCost(double newCost)
     {
         cost = newCost;
     }
@@ -140,7 +140,7 @@ class AmountOfCakes extends TaxCalc
         return false;
 
     }
-    public double getTotalWithAmount()
+    public double getTotal()
     {
         double total = super.getTotal() * quantity ;
         return total;
@@ -148,6 +148,6 @@ class AmountOfCakes extends TaxCalc
     
     public String toString()
     {
-        return super.toString() + "\n Total cost for " + quantity + " is: " + getTotalWithAmount();
+        return super.toString() + "\n Total cost for " + quantity + " is: " + getTotal();
     }
 }
